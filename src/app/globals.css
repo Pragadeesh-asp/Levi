@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root { --ink: #e9e6ff; --muted: #9e9ab6; --panel: #161326; --edge: #312b4d; --accent: #a78bfa; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; color: var(--ink); background: radial-gradient(circle at top, #29234c 0, #0d0b16 48rem); font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; }
+.shell { max-width: 1100px; margin: 0 auto; padding: 32px 20px 64px; }
+.panel { border: 1px solid var(--edge); border-radius: 16px; background: color-mix(in srgb, var(--panel) 90%, transparent); padding: 20px; }
+.eyebrow { color: #c4b5fd; font-size: .75rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.muted { color: var(--muted); }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.button { display: inline-block; border: 0; border-radius: 10px; padding: 10px 14px; font-weight: 700; background: var(--accent); color: #140f28; text-decoration: none; cursor: pointer; }
+.button.secondary { background: transparent; border: 1px solid var(--edge); color: var(--ink); }
+.quest { border-top: 1px solid var(--edge); padding: 14px 0; }
+.bar { height: 8px; overflow: hidden; border-radius: 999px; background: #2b2742; }.bar > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg,#8b5cf6,#22d3ee); }
